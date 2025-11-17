@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransitWatch Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        li {
+            background: #fff;
+            border-left: 5px solid #3498db;
+            margin: 10px 0;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .eta {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        .status {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .status.delayed {
+            color: #e74c3c;
+        }
+
+        .status.in-transit {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <h1>📦 TransitWatch: Shipment Dashboard</h1>
+    <ul>
+        {% for shipment in shipments %}
+        <li>
+            <strong>{{ shipment.id }}</strong> | {{ shipment.origin }} → {{ shipment.destination }} <br>
+            <span class="eta">ETA: {{ shipment.eta }}</span> |
+            <span class="status {{ shipment.status|lower|replace(" ", "-") }}">{{ shipment.status }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

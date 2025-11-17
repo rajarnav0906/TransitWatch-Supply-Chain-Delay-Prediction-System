@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitWatch - Delay Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 50%, #0f0f23 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+
+        .container {
+            background: #1e1e3f;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            max-width: 600px;
+            width: 100%;
+            padding: 48px;
+            animation: slideUp 0.6s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            color: #a0a0b0;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header .icon-wrapper {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+        }
+
+        .header .icon-wrapper i {
+            font-size: 28px;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            color: #c0c0d0;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        label i {
+            margin-right: 8px;
+            color: #667eea;
+            font-size: 14px;
+            width: 18px;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background: #252547;
+            color: #ffffff;
+            font-family: inherit;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            background: #2a2a4f;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+        }
+
+        input[type="number"]::placeholder {
+            color: #606080;
+        }
+
+        select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0a0b0' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn i {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-wrapper">
+                <i class="fas fa-truck-fast"></i>
+            </div>
+            <h1>TransitWatch</h1>
+            <p class="subtitle">AI-Powered Delay Prediction System</p>
+        </div>
+
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-route"></i>
+                    Distance (kilometers)
+                </label>
+                <input type="number" name="distance_km" required min="1" placeholder="Enter distance in kilometers">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-truck"></i>
+                    Vehicle Type
+                </label>
+                <select name="vehicle_type" required>
+                    <option value="">Select vehicle type</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Van">Van</option>
+                    <option value="Bike">Bike</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-star"></i>
+                    Vendor Rating (1-5)
+                </label>
+                <input type="number" name="vendor_rating" required min="1" max="5" placeholder="Rate from 1 to 5">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-cloud"></i>
+                    Weather Condition
+                </label>
+                <select name="weather" required>
+                    <option value="">Select weather condition</option>
+                    <option value="Sunny">Sunny</option>
+                    <option value="Rain">Rain</option>
+                    <option value="Storm">Storm</option>
+                    <option value="Fog">Fog</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fas fa-building"></i>
+                    Carrier
+                </label>
+                <select name="carrier" required>
+                    <option value="">Select carrier</option>
+                    <option value="Blue Dart">Blue Dart</option>
+                    <option value="Delhivery">Delhivery</option>
+                    <option value="FedEx">FedEx</option>
+                    <option value="DTDC">DTDC</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-calculator"></i>
+                Predict Delay
+            </button>
+        </form>
+    </div>
+</body>
+</html>

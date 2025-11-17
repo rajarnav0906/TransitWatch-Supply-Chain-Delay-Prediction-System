@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipment Delay Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0ecf8, #f8f9fa);
+            padding: 40px;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 35px 40px;
+            max-width: 550px;
+            margin: auto;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 26px;
+            background: linear-gradient(to right, #0077b6, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .alert {
+            background-color: #ffe6e6;
+            color: #b30000;
+            padding: 14px 16px;
+            border-left: 6px solid #e60000;
+            margin-top: 25px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .alert strong {
+            color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🚚 Shipment Delay Prediction</h2>
+        <p><span class="label">📅 Predicted Delay:</span> {{ delay }} days</p>
+        <p><span class="label">🧭 Likely Reason:</span> {{ reason }}</p>
+
+        {% if delay > 2 %}
+        <div class="alert">
+            ❗ <strong>High Risk of Delay!</strong> Immediate action suggested.
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<!-- Inside result.html -->
+<div style="margin-top: 30px; text-align: center;">
+    <a href="/download_pdf" style="background-color: #0077b6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px;">📥 Download as PDF</a>
+    <a href="/download_csv" style="background-color: #00b894; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; margin-left: 10px;">📥 Download as CSV</a>
+</div>

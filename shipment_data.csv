@@ -1,0 +1,501 @@
+distance_km,vehicle_type,vendor_rating,weather,carrier,delay_days
+1164,Bike,3,Sunny,Blue Dart,2.17
+1689,Bike,5,Storm,FedEx,4.25
+812,Bike,2,Rain,Blue Dart,2.99
+1957,Van,5,Fog,Blue Dart,4.38
+481,Van,3,Rain,DTDC,1.97
+586,Bike,2,Storm,DTDC,4.37
+1032,Van,2,Storm,Blue Dart,3.86
+164,Truck,3,Sunny,DTDC,1.74
+1828,Van,3,Fog,DTDC,4.46
+1714,Truck,1,Rain,DTDC,4.97
+800,Bike,5,Fog,Delhivery,3.31
+1485,Bike,1,Sunny,FedEx,3.92
+641,Truck,4,Rain,FedEx,3.31
+1262,Van,1,Fog,FedEx,3.94
+1486,Bike,2,Storm,FedEx,5.59
+685,Bike,4,Sunny,Delhivery,1.97
+951,Van,5,Storm,DTDC,3.57
+1778,Bike,1,Rain,FedEx,4.61
+354,Van,2,Fog,Delhivery,3.34
+523,Truck,4,Storm,Delhivery,4.25
+441,Bike,5,Storm,FedEx,3.05
+911,Bike,2,Fog,Delhivery,3.59
+776,Bike,2,Rain,FedEx,3.02
+1517,Truck,1,Storm,DTDC,5.87
+586,Truck,2,Fog,Blue Dart,3.76
+1619,Van,1,Rain,DTDC,3.91
+1873,Bike,2,Sunny,FedEx,3.44
+671,Bike,3,Rain,Blue Dart,2.6
+225,Truck,5,Fog,DTDC,2.97
+1206,Truck,3,Fog,Delhivery,4.49
+939,Bike,1,Storm,DTDC,5.37
+1260,Bike,5,Fog,Blue Dart,3.19
+1619,Van,1,Fog,FedEx,4.34
+553,Van,4,Rain,Delhivery,2.09
+1708,Truck,3,Rain,Blue Dart,4.92
+1756,Bike,5,Rain,Delhivery,4.04
+892,Van,4,Rain,FedEx,2.15
+1623,Bike,1,Fog,Delhivery,5.47
+337,Truck,4,Sunny,FedEx,1.27
+1107,Bike,5,Sunny,Blue Dart,1.98
+1698,Van,5,Sunny,Delhivery,2.43
+1045,Truck,1,Fog,FedEx,5.05
+329,Truck,5,Fog,Delhivery,2.63
+402,Truck,4,Storm,Delhivery,4.07
+278,Truck,4,Rain,DTDC,2.76
+1011,Bike,3,Rain,Blue Dart,2.91
+656,Truck,4,Rain,DTDC,3.14
+1398,Truck,1,Sunny,DTDC,3.66
+192,Truck,3,Storm,FedEx,4.33
+1426,Van,3,Storm,DTDC,4.16
+1395,Truck,1,Rain,Blue Dart,4.57
+229,Van,5,Sunny,FedEx,0.0
+1508,Truck,3,Storm,Blue Dart,5.82
+1627,Bike,2,Storm,DTDC,5.83
+929,Van,4,Fog,FedEx,3.34
+1456,Bike,5,Sunny,DTDC,2.77
+573,Van,5,Fog,FedEx,2.55
+490,Bike,3,Storm,DTDC,3.53
+1154,Bike,1,Storm,Blue Dart,4.84
+1391,Truck,5,Rain,FedEx,3.3
+394,Bike,4,Storm,Delhivery,3.35
+517,Bike,1,Fog,FedEx,3.87
+379,Van,5,Rain,FedEx,1.31
+92,Bike,1,Rain,FedEx,2.98
+1380,Truck,3,Fog,Delhivery,4.71
+1167,Truck,5,Rain,Delhivery,3.59
+123,Truck,1,Fog,Blue Dart,3.52
+646,Bike,2,Storm,DTDC,4.39
+907,Bike,5,Storm,Delhivery,4.04
+551,Van,3,Sunny,Blue Dart,0.93
+626,Bike,3,Sunny,FedEx,1.51
+1156,Van,2,Rain,Blue Dart,3.51
+1716,Bike,3,Fog,Blue Dart,4.57
+1602,Van,2,Storm,Delhivery,4.8
+158,Bike,2,Fog,Blue Dart,3.07
+1657,Van,1,Fog,FedEx,4.71
+1323,Truck,5,Rain,FedEx,3.53
+1986,Truck,2,Sunny,DTDC,4.13
+1045,Bike,4,Rain,FedEx,3.19
+1244,Bike,5,Fog,Delhivery,4.0
+951,Bike,5,Rain,FedEx,2.55
+1429,Truck,5,Rain,Blue Dart,4.06
+1361,Bike,2,Rain,FedEx,4.18
+522,Bike,3,Sunny,FedEx,1.95
+1881,Van,2,Fog,Delhivery,4.6
+1284,Bike,1,Rain,DTDC,4.69
+791,Truck,5,Fog,DTDC,3.82
+1450,Bike,5,Rain,Blue Dart,3.32
+1304,Bike,3,Storm,Blue Dart,4.98
+577,Bike,4,Storm,FedEx,3.37
+1662,Van,1,Fog,DTDC,5.26
+700,Truck,3,Rain,Delhivery,3.36
+1135,Bike,2,Rain,Delhivery,4.3
+212,Van,2,Rain,Blue Dart,1.99
+1273,Bike,3,Rain,FedEx,3.22
+1361,Truck,1,Fog,Delhivery,5.06
+1023,Truck,4,Fog,Blue Dart,4.38
+1777,Bike,4,Fog,Delhivery,4.54
+1517,Bike,2,Rain,FedEx,4.26
+653,Bike,4,Rain,FedEx,2.49
+1701,Truck,3,Sunny,FedEx,3.28
+1298,Van,2,Storm,FedEx,4.89
+1254,Bike,5,Rain,Blue Dart,2.76
+537,Bike,4,Fog,DTDC,2.58
+358,Truck,5,Sunny,Blue Dart,1.39
+259,Truck,5,Fog,Delhivery,3.02
+1582,Bike,1,Rain,FedEx,4.8
+1190,Bike,4,Rain,Blue Dart,3.53
+692,Bike,1,Fog,DTDC,4.31
+821,Bike,3,Sunny,FedEx,2.0
+880,Bike,1,Sunny,Blue Dart,3.21
+333,Bike,5,Rain,Delhivery,1.82
+1508,Bike,5,Fog,DTDC,4.06
+878,Truck,5,Rain,Delhivery,3.47
+1110,Van,4,Fog,Blue Dart,3.23
+1370,Truck,3,Storm,FedEx,5.33
+436,Truck,1,Fog,Delhivery,3.91
+792,Truck,3,Fog,FedEx,3.69
+1089,Van,1,Fog,Blue Dart,3.58
+1170,Truck,1,Sunny,DTDC,3.24
+190,Bike,3,Rain,DTDC,2.73
+1702,Truck,5,Storm,Delhivery,4.93
+340,Bike,4,Storm,FedEx,2.87
+514,Truck,2,Storm,DTDC,4.55
+864,Truck,5,Rain,FedEx,2.81
+1601,Van,5,Storm,Blue Dart,3.85
+532,Truck,4,Rain,Blue Dart,3.08
+1561,Bike,3,Storm,Blue Dart,4.62
+424,Van,1,Rain,FedEx,2.94
+1528,Truck,3,Sunny,Blue Dart,3.23
+527,Truck,5,Storm,Blue Dart,3.55
+1947,Truck,5,Sunny,Blue Dart,3.44
+815,Bike,4,Fog,Delhivery,3.21
+1708,Bike,1,Rain,Blue Dart,4.58
+220,Van,3,Fog,Blue Dart,1.95
+629,Truck,3,Sunny,DTDC,2.65
+1888,Van,1,Rain,FedEx,4.84
+442,Bike,2,Rain,FedEx,3.02
+1565,Truck,5,Storm,FedEx,5.3
+690,Bike,3,Storm,FedEx,4.3
+1310,Bike,3,Rain,FedEx,4.18
+888,Bike,1,Storm,DTDC,5.28
+467,Truck,2,Fog,DTDC,4.42
+1320,Bike,2,Storm,Blue Dart,4.65
+450,Bike,3,Fog,Blue Dart,3.37
+1075,Truck,3,Fog,Delhivery,3.98
+1326,Bike,1,Storm,DTDC,5.45
+602,Van,5,Fog,FedEx,1.92
+294,Van,2,Rain,Delhivery,2.21
+173,Bike,4,Fog,Delhivery,2.62
+1244,Bike,3,Rain,Blue Dart,3.96
+1100,Van,1,Fog,DTDC,3.91
+1441,Truck,1,Rain,Delhivery,4.55
+267,Bike,5,Fog,FedEx,2.7
+1474,Van,4,Fog,Delhivery,3.43
+300,Van,3,Fog,Blue Dart,2.55
+1998,Bike,5,Rain,FedEx,4.45
+915,Bike,3,Storm,Blue Dart,3.76
+1475,Bike,2,Fog,DTDC,4.58
+863,Bike,5,Fog,Blue Dart,3.42
+797,Van,3,Fog,Blue Dart,3.29
+1389,Van,3,Storm,DTDC,4.26
+429,Truck,5,Rain,Delhivery,2.33
+780,Truck,4,Sunny,Delhivery,2.18
+723,Truck,5,Storm,Blue Dart,4.3
+346,Bike,2,Rain,Blue Dart,2.4
+1116,Bike,1,Sunny,FedEx,2.76
+485,Van,5,Storm,Delhivery,2.54
+1135,Bike,3,Rain,Delhivery,3.32
+793,Van,3,Fog,Delhivery,2.63
+1743,Bike,1,Storm,DTDC,5.98
+1779,Truck,3,Sunny,Delhivery,3.52
+580,Van,5,Storm,Blue Dart,2.8
+495,Van,2,Storm,Blue Dart,3.68
+1786,Truck,4,Sunny,DTDC,3.94
+1768,Bike,4,Storm,DTDC,5.38
+694,Van,5,Storm,FedEx,2.81
+334,Van,4,Storm,Delhivery,3.06
+1573,Van,3,Sunny,Delhivery,2.42
+1795,Bike,3,Storm,Blue Dart,5.79
+1211,Van,5,Sunny,DTDC,1.11
+350,Bike,4,Storm,DTDC,3.39
+872,Van,3,Sunny,Blue Dart,1.35
+804,Truck,4,Storm,Delhivery,4.32
+85,Van,1,Rain,DTDC,2.46
+535,Van,2,Rain,Delhivery,2.12
+1814,Bike,5,Storm,FedEx,4.72
+908,Truck,1,Storm,Blue Dart,5.02
+1720,Truck,5,Sunny,Blue Dart,3.27
+877,Van,5,Sunny,FedEx,0.89
+1558,Bike,3,Fog,Blue Dart,4.68
+50,Van,5,Storm,Blue Dart,2.31
+255,Van,2,Sunny,FedEx,0.88
+1247,Bike,4,Storm,DTDC,3.99
+1743,Truck,3,Rain,Blue Dart,4.4
+1973,Truck,2,Storm,Delhivery,5.96
+897,Truck,5,Fog,Delhivery,3.69
+1152,Truck,4,Sunny,Delhivery,2.29
+1462,Van,2,Rain,Blue Dart,4.18
+1007,Van,5,Sunny,DTDC,0.91
+1568,Van,3,Rain,DTDC,3.88
+1428,Bike,3,Sunny,FedEx,2.83
+1642,Truck,3,Fog,DTDC,5.62
+866,Van,5,Storm,Blue Dart,2.84
+1740,Van,2,Rain,Blue Dart,4.43
+487,Truck,1,Sunny,DTDC,2.36
+682,Van,5,Sunny,Delhivery,0.41
+677,Van,2,Sunny,DTDC,2.11
+79,Van,3,Storm,FedEx,2.61
+411,Bike,3,Fog,Blue Dart,2.7
+1509,Van,4,Rain,DTDC,3.57
+1207,Bike,2,Fog,FedEx,4.8
+615,Bike,5,Rain,DTDC,2.72
+178,Bike,2,Sunny,DTDC,2.1
+738,Truck,4,Fog,Blue Dart,3.45
+1696,Van,3,Sunny,Delhivery,2.97
+1548,Bike,4,Sunny,DTDC,2.87
+187,Truck,1,Sunny,DTDC,1.94
+1347,Van,1,Sunny,Delhivery,2.89
+1856,Truck,3,Rain,Blue Dart,4.58
+1766,Truck,1,Rain,FedEx,5.03
+788,Van,1,Rain,DTDC,3.67
+721,Bike,2,Sunny,DTDC,2.44
+1482,Van,2,Fog,Delhivery,4.28
+1839,Truck,5,Fog,Delhivery,4.86
+1053,Van,5,Storm,Delhivery,2.92
+1351,Van,3,Sunny,DTDC,2.1
+856,Bike,5,Rain,DTDC,2.77
+1063,Bike,4,Rain,Delhivery,3.21
+1374,Van,4,Rain,Delhivery,3.03
+1522,Bike,4,Rain,DTDC,4.06
+1486,Bike,3,Rain,Delhivery,3.91
+592,Van,1,Storm,FedEx,3.68
+1242,Van,2,Fog,DTDC,3.85
+125,Truck,5,Storm,FedEx,3.48
+1593,Bike,5,Sunny,FedEx,2.2
+1458,Truck,4,Fog,FedEx,4.61
+487,Van,5,Rain,FedEx,1.22
+1369,Truck,2,Storm,Delhivery,5.99
+1685,Van,1,Rain,Delhivery,4.19
+977,Van,2,Rain,DTDC,2.67
+517,Truck,3,Sunny,Delhivery,2.69
+854,Van,3,Rain,Delhivery,2.34
+704,Bike,3,Fog,Delhivery,3.59
+1705,Bike,5,Storm,FedEx,5.11
+1932,Bike,2,Storm,DTDC,6.25
+897,Bike,1,Storm,FedEx,4.76
+621,Truck,5,Sunny,Blue Dart,2.16
+749,Truck,5,Rain,DTDC,2.58
+1377,Van,5,Storm,FedEx,3.53
+1293,Truck,3,Rain,Blue Dart,4.39
+1899,Van,2,Fog,FedEx,5.14
+882,Van,1,Fog,DTDC,3.89
+98,Bike,2,Sunny,Blue Dart,1.44
+1712,Bike,1,Fog,FedEx,5.32
+763,Truck,3,Fog,Blue Dart,4.18
+139,Truck,4,Fog,FedEx,3.11
+615,Van,5,Fog,Delhivery,2.29
+803,Bike,4,Rain,Delhivery,2.87
+633,Van,5,Sunny,Blue Dart,1.08
+1955,Van,3,Sunny,FedEx,3.0
+1360,Truck,2,Storm,FedEx,5.51
+855,Truck,3,Storm,FedEx,4.46
+102,Van,1,Storm,FedEx,2.99
+664,Truck,4,Fog,FedEx,4.07
+983,Truck,3,Sunny,FedEx,3.0
+232,Van,5,Fog,Delhivery,2.21
+1873,Van,2,Sunny,Blue Dart,2.75
+1466,Bike,1,Storm,Blue Dart,5.5
+101,Bike,4,Rain,FedEx,1.55
+910,Truck,1,Storm,Delhivery,5.29
+954,Bike,3,Storm,DTDC,4.6
+351,Van,4,Storm,Delhivery,2.51
+1735,Bike,4,Sunny,Blue Dart,3.42
+433,Van,1,Sunny,DTDC,1.67
+1585,Bike,3,Sunny,Delhivery,3.25
+1324,Truck,2,Sunny,Blue Dart,4.01
+125,Truck,3,Rain,FedEx,2.67
+360,Truck,3,Storm,FedEx,4.34
+886,Van,5,Storm,DTDC,3.05
+1411,Bike,2,Storm,Delhivery,5.45
+834,Bike,4,Storm,Delhivery,3.42
+1118,Truck,2,Rain,Blue Dart,4.11
+497,Bike,2,Storm,FedEx,4.43
+1573,Bike,2,Fog,Blue Dart,4.78
+1972,Bike,4,Sunny,DTDC,3.26
+533,Van,3,Rain,Blue Dart,2.2
+135,Bike,1,Storm,Delhivery,4.08
+920,Bike,1,Storm,DTDC,5.15
+468,Van,4,Rain,Delhivery,1.83
+1888,Van,4,Sunny,DTDC,2.94
+407,Bike,4,Rain,FedEx,2.21
+1044,Bike,5,Rain,FedEx,2.53
+1797,Bike,3,Rain,DTDC,4.83
+902,Bike,5,Rain,Delhivery,2.98
+209,Truck,5,Sunny,Blue Dart,1.73
+1886,Truck,5,Sunny,Blue Dart,3.34
+320,Van,4,Sunny,Delhivery,0.38
+71,Bike,5,Rain,Blue Dart,1.35
+1322,Truck,5,Rain,Delhivery,3.64
+1057,Truck,3,Sunny,FedEx,3.34
+590,Van,1,Storm,Blue Dart,4.28
+580,Bike,2,Sunny,DTDC,2.44
+1435,Truck,2,Storm,Blue Dart,6.14
+1293,Truck,1,Fog,Delhivery,5.63
+867,Van,2,Fog,DTDC,3.11
+830,Bike,5,Storm,FedEx,3.26
+187,Van,5,Fog,Blue Dart,1.56
+794,Van,4,Sunny,Delhivery,1.11
+1966,Truck,3,Storm,Blue Dart,6.21
+766,Truck,3,Storm,FedEx,4.98
+1860,Truck,5,Storm,DTDC,5.47
+292,Truck,4,Fog,DTDC,2.68
+1270,Van,5,Storm,Delhivery,3.77
+396,Van,5,Fog,DTDC,2.27
+1495,Truck,1,Fog,Blue Dart,5.65
+1814,Bike,2,Sunny,FedEx,3.89
+522,Truck,4,Fog,Blue Dart,3.41
+221,Truck,2,Fog,Delhivery,3.62
+479,Van,2,Sunny,Delhivery,1.57
+513,Van,3,Storm,Blue Dart,3.01
+1207,Bike,3,Storm,FedEx,4.28
+1940,Truck,4,Rain,DTDC,4.42
+626,Bike,3,Storm,FedEx,4.02
+1296,Bike,4,Rain,DTDC,3.23
+183,Truck,3,Rain,Delhivery,2.68
+1783,Bike,2,Sunny,FedEx,3.49
+401,Van,3,Storm,Delhivery,3.47
+394,Bike,3,Sunny,FedEx,1.97
+925,Van,4,Storm,DTDC,3.49
+1721,Bike,3,Storm,Blue Dart,5.19
+63,Van,2,Sunny,FedEx,1.08
+1403,Van,3,Fog,DTDC,4.35
+1328,Bike,2,Storm,DTDC,5.14
+1915,Bike,3,Storm,FedEx,5.45
+1746,Bike,4,Sunny,Blue Dart,2.96
+628,Van,3,Storm,Blue Dart,3.4
+678,Van,2,Rain,DTDC,2.4
+1154,Bike,5,Sunny,FedEx,2.18
+1682,Bike,1,Fog,FedEx,5.77
+1549,Truck,1,Sunny,Delhivery,3.94
+483,Van,3,Rain,DTDC,2.66
+1315,Van,1,Rain,FedEx,4.0
+223,Van,4,Rain,FedEx,1.77
+1214,Bike,1,Fog,Blue Dart,4.77
+1803,Van,4,Sunny,DTDC,2.22
+68,Bike,4,Rain,Delhivery,2.07
+1076,Truck,1,Fog,Delhivery,4.81
+574,Van,4,Rain,Delhivery,1.76
+511,Truck,2,Rain,FedEx,3.94
+590,Bike,1,Sunny,Blue Dart,2.15
+941,Bike,5,Sunny,FedEx,2.08
+758,Van,5,Sunny,FedEx,0.87
+1464,Truck,1,Rain,Delhivery,5.1
+1535,Truck,4,Storm,Delhivery,5.01
+1154,Bike,4,Sunny,DTDC,2.34
+174,Van,5,Fog,Blue Dart,1.81
+939,Truck,4,Fog,Blue Dart,3.81
+326,Truck,5,Fog,Blue Dart,3.19
+1432,Bike,1,Fog,Blue Dart,5.13
+1748,Van,4,Rain,DTDC,3.72
+256,Truck,2,Rain,DTDC,2.98
+1717,Bike,3,Rain,DTDC,4.2
+744,Truck,5,Rain,FedEx,3.28
+1880,Van,2,Storm,FedEx,5.24
+909,Van,1,Storm,DTDC,3.95
+1363,Truck,4,Fog,FedEx,4.1
+1688,Truck,1,Sunny,DTDC,3.86
+831,Truck,2,Rain,Delhivery,4.35
+1565,Bike,3,Sunny,Blue Dart,2.56
+1049,Van,5,Rain,DTDC,2.41
+1176,Truck,3,Fog,DTDC,4.87
+1564,Van,4,Fog,Blue Dart,4.14
+869,Van,5,Storm,Blue Dart,2.64
+355,Van,1,Fog,FedEx,3.63
+1109,Truck,3,Fog,Delhivery,4.55
+923,Van,1,Rain,Blue Dart,3.62
+1982,Van,5,Fog,DTDC,4.24
+813,Bike,2,Storm,Blue Dart,4.7
+1270,Van,2,Storm,FedEx,4.44
+1058,Bike,5,Storm,FedEx,4.22
+1492,Bike,5,Storm,Delhivery,4.82
+1524,Van,3,Rain,Delhivery,3.08
+763,Bike,1,Rain,Blue Dart,3.69
+133,Van,1,Fog,FedEx,2.74
+881,Van,2,Fog,Delhivery,3.69
+148,Truck,1,Fog,FedEx,3.4
+83,Truck,2,Storm,DTDC,4.23
+1025,Van,4,Rain,Delhivery,2.73
+1927,Van,4,Storm,DTDC,4.89
+605,Van,5,Sunny,Delhivery,1.16
+401,Van,3,Sunny,Delhivery,1.35
+537,Bike,5,Rain,FedEx,2.36
+1738,Bike,2,Fog,Delhivery,4.94
+1779,Van,2,Sunny,Delhivery,3.57
+1355,Truck,5,Storm,DTDC,5.05
+1745,Bike,2,Storm,Delhivery,5.85
+635,Van,3,Rain,Blue Dart,2.38
+1747,Bike,2,Sunny,Blue Dart,3.42
+1409,Truck,5,Sunny,FedEx,2.81
+1157,Truck,4,Rain,Delhivery,4.09
+411,Truck,1,Storm,DTDC,4.58
+376,Truck,3,Fog,Blue Dart,3.73
+1917,Van,3,Fog,Delhivery,4.76
+1344,Bike,4,Fog,FedEx,3.82
+1575,Van,1,Storm,Delhivery,4.7
+319,Truck,2,Sunny,FedEx,2.7
+516,Van,5,Sunny,FedEx,0.28
+830,Van,2,Storm,Blue Dart,3.58
+1205,Bike,3,Fog,FedEx,3.89
+658,Bike,3,Storm,Delhivery,3.45
+600,Van,5,Rain,DTDC,2.03
+1616,Truck,5,Sunny,FedEx,3.39
+1331,Bike,2,Rain,Blue Dart,4.18
+1103,Truck,1,Sunny,DTDC,3.6
+1505,Bike,2,Rain,FedEx,3.78
+1806,Bike,2,Storm,Delhivery,5.24
+1098,Bike,4,Sunny,DTDC,1.95
+1206,Van,5,Rain,Blue Dart,2.07
+1150,Truck,2,Sunny,Delhivery,2.89
+787,Bike,2,Sunny,Blue Dart,2.45
+669,Truck,5,Storm,DTDC,4.04
+1927,Truck,2,Rain,Delhivery,5.4
+721,Van,2,Sunny,Blue Dart,2.12
+1718,Bike,3,Rain,DTDC,3.8
+122,Truck,5,Fog,DTDC,2.77
+141,Bike,1,Fog,Blue Dart,3.72
+1686,Van,4,Sunny,FedEx,2.63
+1801,Truck,4,Rain,DTDC,4.47
+1699,Bike,3,Storm,FedEx,4.73
+129,Van,5,Fog,Blue Dart,1.66
+1952,Truck,3,Storm,Delhivery,5.7
+674,Bike,5,Storm,DTDC,2.87
+772,Truck,4,Rain,Blue Dart,3.38
+999,Bike,4,Sunny,FedEx,1.69
+84,Truck,3,Fog,DTDC,3.22
+1598,Bike,3,Storm,FedEx,4.84
+421,Van,3,Fog,FedEx,2.89
+1407,Van,1,Rain,Delhivery,3.89
+1038,Truck,5,Rain,DTDC,3.0
+748,Truck,5,Sunny,Blue Dart,1.76
+1640,Van,5,Sunny,FedEx,1.65
+264,Bike,2,Sunny,FedEx,1.43
+507,Bike,4,Storm,DTDC,3.32
+1997,Bike,3,Rain,DTDC,4.33
+1720,Truck,2,Fog,Delhivery,5.74
+364,Truck,3,Storm,FedEx,3.56
+1843,Bike,2,Fog,FedEx,5.58
+1448,Bike,3,Storm,FedEx,4.88
+307,Bike,4,Storm,Delhivery,2.77
+57,Bike,1,Storm,FedEx,4.18
+1819,Bike,1,Fog,Blue Dart,5.66
+1631,Truck,2,Storm,DTDC,5.64
+1873,Bike,5,Sunny,FedEx,2.92
+1345,Van,5,Storm,DTDC,3.4
+923,Truck,4,Rain,Delhivery,3.58
+181,Van,1,Storm,Delhivery,3.47
+890,Bike,1,Fog,FedEx,4.73
+1348,Truck,3,Rain,Delhivery,4.5
+581,Truck,5,Fog,Delhivery,3.41
+219,Truck,1,Rain,Delhivery,3.27
+643,Truck,1,Fog,FedEx,4.94
+1038,Bike,4,Rain,DTDC,2.85
+416,Bike,2,Fog,Delhivery,3.67
+1740,Bike,3,Storm,FedEx,5.06
+332,Van,5,Sunny,FedEx,0.08
+1324,Bike,3,Rain,Delhivery,3.96
+1969,Bike,1,Fog,Blue Dart,5.81
+1426,Truck,3,Rain,FedEx,4.37
+672,Van,4,Rain,Blue Dart,1.86
+1516,Truck,1,Sunny,Blue Dart,4.04
+98,Truck,5,Rain,Blue Dart,2.41
+1613,Van,5,Rain,DTDC,2.94
+550,Van,2,Storm,DTDC,3.11
+418,Truck,2,Rain,DTDC,3.72
+171,Van,2,Sunny,Blue Dart,1.36
+1851,Truck,5,Fog,DTDC,5.01
+1036,Van,1,Sunny,FedEx,2.07
+557,Van,4,Sunny,DTDC,1.01
+664,Bike,4,Sunny,DTDC,1.33
+1315,Van,3,Storm,Delhivery,4.01
+1007,Bike,3,Storm,FedEx,4.84
+1345,Van,2,Rain,Blue Dart,3.91
+1362,Truck,3,Rain,Blue Dart,4.3
+1404,Bike,2,Rain,Delhivery,3.77
+1743,Truck,5,Sunny,Blue Dart,3.53
+1335,Van,4,Fog,Blue Dart,3.89
+490,Truck,3,Fog,FedEx,3.83
+392,Van,2,Storm,FedEx,3.78
+1206,Truck,1,Sunny,FedEx,3.77
+1814,Van,2,Fog,Blue Dart,4.37
+846,Bike,2,Fog,FedEx,3.61
+727,Truck,4,Sunny,Blue Dart,1.74
+1937,Truck,5,Storm,FedEx,4.96
+493,Truck,5,Fog,Blue Dart,2.85
+1483,Van,4,Fog,Delhivery,3.8
+319,Van,3,Storm,Blue Dart,2.71
+1843,Bike,5,Fog,Delhivery,4.08
+152,Truck,2,Rain,DTDC,2.82
+1681,Van,3,Storm,Delhivery,4.21

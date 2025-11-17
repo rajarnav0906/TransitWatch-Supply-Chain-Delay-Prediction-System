@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitWatch - Prediction Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 50%, #0f0f23 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: #1e1e3f;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            color: #a0a0b0;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .delay-badge {
+            text-align: center;
+            margin: 32px 0;
+            padding: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+        }
+
+        .delay-badge .number {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .delay-badge .label {
+            font-size: 14px;
+            opacity: 0.95;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .info-item {
+            padding: 20px;
+            background: #252547;
+            border-radius: 10px;
+            border-left: 3px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #2a2a4f;
+            transform: translateY(-2px);
+        }
+
+        .info-item .label {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            color: #a0a0b0;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .info-item .label i {
+            margin-right: 8px;
+            color: #667eea;
+            font-size: 12px;
+            width: 16px;
+        }
+
+        .info-item .value {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .alert {
+            margin-top: 24px;
+            padding: 20px;
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            border-radius: 10px;
+            color: #ffc107;
+        }
+
+        .alert.high-risk {
+            background: rgba(220, 53, 69, 0.1);
+            border-left-color: #dc3545;
+            color: #ff6b7a;
+        }
+
+        .alert strong {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .alert i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .reason-box {
+            background: #252547;
+            padding: 24px;
+            border-radius: 10px;
+            margin-top: 24px;
+            border-left: 3px solid #2196F3;
+        }
+
+        .reason-box .label {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            color: #a0a0b0;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .reason-box .label i {
+            margin-right: 8px;
+            color: #2196F3;
+            font-size: 12px;
+        }
+
+        .reason-box .text {
+            color: #e0e0e0;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 150px;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-pdf {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-csv {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-home {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn i {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>Prediction Results</h1>
+                <p class="subtitle">TransitWatch Analysis Report</p>
+            </div>
+
+            <div class="delay-badge">
+                <div class="number">{{ delay }}</div>
+                <div class="label">Predicted Delay (Days)</div>
+            </div>
+
+            <div class="reason-box">
+                <div class="label">
+                    <i class="fas fa-chart-line"></i>
+                    Analysis
+                </div>
+                <div class="text">{{ reason }}</div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">
+                        <i class="fas fa-route"></i>
+                        Route Type
+                    </div>
+                    <div class="value">{{ route_type }}</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">
+                        <i class="fas fa-truck"></i>
+                        Transport Mode
+                    </div>
+                    <div class="value">{{ transport_mode }}</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">
+                        <i class="fas fa-building"></i>
+                        Carrier
+                    </div>
+                    <div class="value">{{ carrier_name }}</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">
+                        <i class="fas fa-cloud"></i>
+                        Weather Impact
+                    </div>
+                    <div class="value">{{ weather_impact }}</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Risk Score
+                    </div>
+                    <div class="value">{{ risk_score }}/100</div>
+                </div>
+            </div>
+
+            <div class="info-item" style="margin-top: 20px;">
+                <div class="label">
+                    <i class="fas fa-lightbulb"></i>
+                    Suggested Action
+                </div>
+                <div class="value" style="font-size: 15px; font-weight: 500;">{{ suggested_action }}</div>
+            </div>
+
+            {% if delay > 2 %}
+            <div class="alert high-risk">
+                <strong>
+                    <i class="fas fa-exclamation-circle"></i>
+                    High Risk Alert
+                </strong>
+                Significant delay expected. Consider alternative routes or transport modes immediately.
+            </div>
+            {% else %}
+            <div class="alert">
+                <strong>
+                    <i class="fas fa-check-circle"></i>
+                    Low to Moderate Risk
+                </strong>
+                Delay is manageable. Monitor the shipment closely.
+            </div>
+            {% endif %}
+
+            <div class="actions">
+                <a href="/download_pdf" class="btn btn-pdf">
+                    <i class="fas fa-file-pdf"></i>
+                    Download PDF
+                </a>
+                <a href="/download_csv" class="btn btn-csv">
+                    <i class="fas fa-file-csv"></i>
+                    Download CSV
+                </a>
+                <a href="/" class="btn btn-home">
+                    <i class="fas fa-home"></i>
+                    New Prediction
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

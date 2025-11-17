@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shipment Delay Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0ecf8, #f8f9fa);
+            padding: 40px;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 35px 40px;
+            max-width: 600px;
+            margin: auto;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 26px;
+            background: linear-gradient(to right, #0077b6, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .alert {
+            background-color: #ffe6e6;
+            color: #b30000;
+            padding: 14px 16px;
+            border-left: 6px solid #e60000;
+            margin-top: 25px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🚚 Shipment Delay Prediction</h2>
+
+        <p><span class="label">📅 Predicted Delay:</span> {{ delay }} days</p>
+        <p><span class="label">🧭 Reason:</span> {{ reason }}</p>
+        
+        <div class="section">
+            <p><span class="label">🛣️ Route Optimization:</span> {{ route_type }} (e.g., Fastest / Eco-friendly / Least Toll)</p>
+            <p><span class="label">🚛 Transport Mode:</span> {{ transport_mode }} (e.g., Road / Rail / Air / Sea)</p>
+            <p><span class="label">🏷️ Carrier Name:</span> {{ carrier_name }}</p>
+            <p><span class="label">☁️ Weather Impact:</span> {{ weather_impact }} (e.g., None / Moderate / High)</p>
+            <p><span class="label">⚠️ Risk Score:</span> <span class="highlight">{{ risk_score }}/100</span></p>
+            <p><span class="label">🛠️ Suggested Action:</span> {{ suggested_action }}</p>
+        </div>
+
+        {% if delay > 2 %}
+        <div class="alert">
+            ❗ <strong>High Risk of Delay!</strong> Immediate action suggested.
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+<div style="text-align: center; margin-top: 15px;">
+    <a href="/download_csv" 
+       style="background-color: #00b894; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+       📥 Download as CSV
+    </a>
+</div>
+<div style="text-align: center; margin-top: 30px;">
+    <a href="/download_pdf"
+       style="background-color: #0077b6; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+       📥 Download as PDF
+    </a>
+</div>

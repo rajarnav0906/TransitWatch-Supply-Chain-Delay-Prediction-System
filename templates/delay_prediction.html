@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransitWatch - Delay Prediction Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+            color: #333;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .section {
+            margin: 25px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .label {
+            font-weight: 600;
+            color: #666;
+        }
+        .value {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TransitWatch - Delay Prediction Report</h1>
+        <p>Generated Report</p>
+    </div>
+
+    <div class="section">
+        <h2>Prediction Summary</h2>
+        <div class="info-row">
+            <span class="label">Predicted Delay:</span>
+            <span class="value"><strong>{{ delay }} days</strong></span>
+        </div>
+        <div class="info-row">
+            <span class="label">Reason:</span>
+            <span class="value">{{ reason }}</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Shipment Details</h2>
+        <div class="info-row">
+            <span class="label">Route Type:</span>
+            <span class="value">{{ route_type }}</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Transport Mode:</span>
+            <span class="value">{{ transport_mode }}</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Carrier Name:</span>
+            <span class="value">{{ carrier_name }}</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Weather Impact:</span>
+            <span class="value">{{ weather_impact }}</span>
+        </div>
+        <div class="info-row">
+            <span class="label">Risk Score:</span>
+            <span class="value">{{ risk_score }}/100</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Recommendations</h2>
+        <p><strong>Suggested Action:</strong> {{ suggested_action }}</p>
+    </div>
+</body>
+</html>

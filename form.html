@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Delay</title>
+    <style>
+        body { font-family: Arial; background: #f8f8f8; padding: 40px; }
+        .form-box {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Predict Shipment Delay</h2>
+        <form method="POST" action="/predict">
+            <label>Distance (km):</label>
+            <input type="number" name="distance_km" required>
+
+            <label>Vehicle Type:</label>
+            <select name="vehicle_type">
+                <option>Truck</option>
+                <option>Van</option>
+                <option>Bike</option>
+            </select>
+
+            <label>Vendor Rating (1-5):</label>
+            <input type="number" name="vendor_rating" min="1" max="5" required>
+
+            <label>Weather:</label>
+            <select name="weather">
+                <option>Sunny</option>
+                <option>Rain</option>
+                <option>Storm</option>
+                <option>Fog</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
+<label for="carrier">Choose Carrier:</label>
+<select name="carrier" required>
+    <option value="Blue Dart">Blue Dart</option>
+    <option value="Delhivery">Delhivery</option>
+    <option value="FedEx">FedEx</option>
+    <option value="DTDC">DTDC</option>
+</select>
