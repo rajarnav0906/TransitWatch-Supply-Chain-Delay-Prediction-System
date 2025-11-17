@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Model files (optional - uncomment if you don't want to track model)
+# *.pkl
+
+# Data files (optional - uncomment if you don't want to track data)
+# *.csv
+
+# Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+
+# Secrets and keys
+.env
+*.key
+config.ini
+
