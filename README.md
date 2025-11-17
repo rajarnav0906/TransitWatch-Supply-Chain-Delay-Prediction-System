@@ -2,6 +2,10 @@
 
 A web application that helps logistics teams predict shipment delays before they happen. Built with Flask and machine learning, it analyzes factors like distance, weather conditions, vehicle type, and vendor performance to forecast potential delays.
 
+## Demo Video
+
+Watch the project demo: [Demo Video](https://drive.google.com/file/d/1_6G05Xg1qmo1fa8ag_ZQDcP4HQ_7i-Sa/view?usp=drive_link)
+
 ## What It Does
 
 - Predicts how many days a shipment might be delayed
@@ -66,6 +70,3 @@ The system uses a Random Forest machine learning model trained on historical shi
 - **Data Processing:** Pandas
 - **PDF Generation:** xhtml2pdf
 
-## Notes
-
-The model is trained on synthetic data. For production use, replace it with real historical shipment data to improve accuracy.
